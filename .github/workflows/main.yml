@@ -18,11 +18,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Print secret1
+      run : echo ${{ secrets1.SEA1 }}"
+
     - name: Print Hello Message in First Job
       run : echo "Hello World from First job"
     
     - name: Execure few commands
-      run : |
+      run : | 
         echo "Hello Message1"
         echo "Hello Message2"
         echo "Appication name: ${{ env.MY_APPLICATION_NAME }}"
