@@ -18,9 +18,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Print secrets
-      run : echo ${{ secrets1.SEC2 }}"
-
+    
     - name: Print Hello Message in First Job
       run : echo "Hello World from First job"
     
